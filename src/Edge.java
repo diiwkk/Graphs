@@ -12,11 +12,9 @@ public class Edge<Vertex> {
     public Vertex getSource() {
         return source;
     }
-
     public Vertex getDestination() {
         return dest;
     }
-
     public double getWeight() {
         return weight;
     }

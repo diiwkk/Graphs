@@ -9,4 +9,15 @@ public class Edge<Vertex> {
         this.dest = dest;
         this.weight = weight;
     }
+    public Vertex getSource() {
+        return source;
+    }
+
+    public Vertex getDestination() {
+        return dest;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
 }

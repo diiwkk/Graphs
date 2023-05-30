@@ -29,4 +29,9 @@ public class WeightedGraph<Vertex> {
         validateVertex(vertex);
         return adjacencyList.get(vertex);
     }
+    public Set<Vertex> getVertices() {
+        return adjacencyList.keySet();
+    }
+
+
 }

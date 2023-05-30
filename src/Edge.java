@@ -1,5 +1,4 @@
 public class Edge<Vertex> {
-
     private Vertex source;
     private Vertex dest;
     private double weight;

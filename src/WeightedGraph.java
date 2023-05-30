@@ -18,4 +18,15 @@ public class WeightedGraph<Vertex> {
         adjacencyList.get(source).add(edge);
 
     }
+
+    private void validateVertex(Vertex vertex) {
+        if (!adjacencyList.containsKey(vertex)) {
+            throw new IllegalArgumentException("Vertex " + vertex + " is not in the graph");
+        }
+    }
+
+    public List<Edge<Vertex>> getAdjacentEdges(Vertex vertex) {
+        validateVertex(vertex);
+        return adjacencyList.get(vertex);
+    }
 }
